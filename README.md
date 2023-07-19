@@ -1,19 +1,42 @@
+# Pathfinding Visualizer
+
+Pathfinding Visualizer is a Java application that allows users to visualize and explore different pathfinding algorithms on a grid.
+
+## Features
+
+- Grid-based visualization of pathfinding algorithms.
+- User interface for selecting algorithms, setting start and end points, and creating obstacles.
+- Random map generation.
+- Step count display for each algorithm.
+
+## Dependencies
+
+- JavaFX: A Java library used for building interactive applications.
+- OpenJFX: An open-source JavaFX implementation.
+
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+To run the Pathfinding Visualizer application, you'll need to have Java and JavaFX installed on your machine.
 
-## Folder Structure
+1. Clone the repository to your local machine:git clone https://github.com/Mac-McFarland/Pathfinding-Visualizer.git
+2. Open the project in your preferred IDE.
+3. Ensure that the JavaFX dependencies are properly set up in your project configuration.
+4. Build and run the application.
 
-The workspace contains two folders by default, where:
+## Usage
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Upon launching the application, you'll see a grid representing the map.
+- Select an algorithm from the drop-down menu to visualize.
+- Set the start and end points by clicking on the corresponding cells.
+- Use the "Add Wall" button to create obstacles on the grid.
+- Use the "Erase" button to remove walls or reset cells.
+- Click the "Reset" button to clear the grid.
+- Click the "Random Map" button to generate a random map.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Contributing
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
-## Dependency Management
+## License
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-"# Pathfinding-Visualizer" 
+[MIT License](LICENSE)
