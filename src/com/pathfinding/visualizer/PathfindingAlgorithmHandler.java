@@ -1,3 +1,8 @@
+//Class that focuses on executing the pathfinding algorithm and 
+//drawing the path on the grid using the provided start and target cells,
+//passes them into  the findPath method, and get the path, and then calls the
+//drawPath method to draw the path on the grid. If no path is found, an alert
+//will display, be logged, and the grid will be cleared.
 package com.pathfinding.visualizer;
 
 import java.util.List;
@@ -32,7 +37,7 @@ public class PathfindingAlgorithmHandler<T extends Cell<T>> {
             Logger.getLogger(PathfindingAlgorithmHandler.class.getName()).log(Level.WARNING,
                     "No path found between the selected cells");
             // Reset grid to original state
-            visualizer.clearGrid();
+            .clearGrid();
             visualizer.start(null);
             visualizer.clearObstacles();
         }
@@ -40,7 +45,7 @@ public class PathfindingAlgorithmHandler<T extends Cell<T>> {
 
     // Draw the path on the grid
     private void drawPath(List<Cell<T>> path, PathfindingVisualizer<T> visualizer) {
-        visualizer.clearPath();
+        .clearPath();
         for (Cell<T> cell : path) {
             int row = cell.getRow();
             int col = cell.getCol();

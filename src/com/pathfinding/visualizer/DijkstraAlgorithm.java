@@ -1,3 +1,7 @@
+//Class that finds the shortest path from a source cell to all other cells in the
+//grid, doesn't consider any estimates for the distance to the target cell, and
+//is more suitable for graphs without considering a specific target cell.
+
 package com.pathfinding.visualizer;
 
 import java.util.ArrayList;
@@ -12,12 +16,6 @@ public class DijkstraAlgorithm<T extends Cell<T>> implements PathfindingInterfac
     private int[][] grid;
     private int rows;
     private int cols;
-
-    public DijkstraAlgorithm(int[][] grid) {
-        this.grid = grid;
-        this.rows = grid.length;
-        this.cols = grid[0].length;
-    }
 
     @Override
     public List<Cell<T>> findPath(Cell<T> start, Cell<T> target, String algorithmName) {

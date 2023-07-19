@@ -1,3 +1,10 @@
+//Class to perform the AStarAlgorithm when chosen by the user. Grid is for each
+//element to represent the cost or obstacle status of each cell. findPath is 
+//to find the path from the start to end cell. Pq is the priority queue for 
+//storing cells based on the fScore(sum of gScore and hScore), and calculateHScore
+//calculates the heuristic score to estimate the cost of moving to a cell.
+//A* finds the shortest path from a source cell to a target cell, uses heuristics
+//to guide the search, and performs better with a clear target cell in a large space.
 package com.pathfinding.visualizer;
 
 import java.util.ArrayList;
@@ -12,12 +19,6 @@ public class AStarAlgorithm<T extends Cell<T>> implements PathfindingInterface<T
     private int[][] grid;
     private int rows;
     private int cols;
-
-    public AStarAlgorithm(int[][] grid) {
-        this.grid = grid;
-        this.rows = grid.length;
-        this.cols = grid[0].length;
-    }
 
     @Override
     public List<Cell<T>> findPath(Cell<T> start, Cell<T> target, String algorithmName) {
